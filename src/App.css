@@ -1,0 +1,65 @@
+.product-container {
+  display: flex;
+  /* border: 1px solid #ccc; */
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 900px;
+  margin: 0 auto;
+
+}
+
+.subTotal-Container {
+  width: 900px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+
+.product-image {
+  margin-right: 20px;
+}
+
+.product-image img {
+  max-width: 100px;
+}
+
+.product-details {
+  flex: 1;
+}
+
+.product-name {
+  margin: 0;
+}
+
+.price,
+.total-price {
+  margin: 5px 0;
+}
+
+.quantity {
+  margin-bottom: 10px;
+}
+
+.quantity label {
+  margin-right: 10px;
+}
+
+.remove-button {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.ddlText {
+  color: '#e69900'
+}
