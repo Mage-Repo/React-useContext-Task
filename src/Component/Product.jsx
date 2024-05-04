@@ -13,7 +13,10 @@ export function Product({ key, product }) {
         BindProductData(updateProductList);
         console.log(updateProductList);
     }
-
+const removeProduct = (e,id) =>{
+const updateProductList =  productList.filter(item => item.id != id);
+BindProductData(updateProductList);
+}
     return (
         <>
 
@@ -40,7 +43,7 @@ export function Product({ key, product }) {
                         </label>
                         {/* <input type="number" id="quantity" name="quantity" min="1" value="1"> */}
                     </div>
-                    <button className="remove-button">Remove</button>
+                    <button className="remove-button" onClick={(event)=> removeProduct(event,product.id)}>Remove</button>
                 </div>
             </div>
 
